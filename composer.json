@@ -1,0 +1,38 @@
+{
+    "name": "orteko/omnipay-cardgate-au",
+    "type": "library",
+    "description": "Cardgate (AU) driver for the omnipay payment processing library",
+    "keywords": [
+        "gateway",
+        "merchant",
+        "omnipay",
+        "pay",
+        "payment",
+        "cardgate"
+    ],
+    "homepage": "https://github.com/orteko/omnipay-cardgate-au",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew Keynes",
+            "email": "andrew@keynes.id.au"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Omnipay\\CardGateAU\\" : "src/" }
+    },
+    "require": {
+        "omnipay/common": "^3"
+    },
+    "require-dev": {
+        "omnipay/tests": "^3",
+        "squizlabs/php_codesniffer": "^3",
+        "phpro/grumphp": "^0.14.0"
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "check-style": "phpcs -p --standard=PSR2 src/",
+        "fix-style": "phpcbf -p --standard=PSR2 src/"
+   },
+   "prefer-stable": true
+}
